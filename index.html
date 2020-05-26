@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Face tracking</title>
+        <meta name="robots" content="noindex">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/tracker/css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!--- *** Pagina 1 *** --->
+        <div id="pagina_1">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-md-12 header">
+                        <h1>KIES JE IDENTITEIT</h1>
+                    </div>    
+
+                    <div class="col-md-2 celeb-zij">
+                    </div>
+                    <div class="col-md-2 celeb">
+                        <div class="col text-center">
+                            <button class="links" onclick="tom()">
+                                <img src="/tracker/media/persoon_tom.png" />
+                            </button>
+                            <h3>Tom Cruise</h3>
+                            <p>Amerikaanse acteur</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 celeb">
+                        <div class="col text-center">
+                            <button class="links" onclick="famke()">
+                                <img src="/tracker/media/persoon_famke.jpg" />
+                            </button>
+                            <h3>Famke Louise</h3>
+                            <p>Nederlandse zangeres</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 celeb">
+                        <div class="col text-center">
+                            <button class="links" onclick="justin()">
+                                <img src="/tracker/media/persoon_justin.jpg" />
+                            </button>
+                            <h3>Justin Bieber</h3>
+                            <p>Amerikaanse zanger</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 celeb">
+                        <div class="col text-center">
+                            <button class="links" onclick="barack()">
+                                <img src="/tracker/media/persoon_barack.jpg" />
+                            </button>
+                            <h3>Barack Obama</h3>
+                            <p>Amerikaanse president</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 celeb-zij">
+                    </div>
+                    <div class="col-md-2 knop-area">
+                    </div>
+                    <div class="col-md-8 knop-area">
+                        <input class="btn" type="button" value="video aan het laden..." disabled="disabled" onclick="startVideo()" id="startknop"/>
+                    </div>
+                    <div class="col-md-2 knop-area">
+                    </div>
+
+                    <div class="col-md-4 footer">
+                        <img src="/tracker/media/Mark.png"/>
+                        <p>2019 Copyright Timo Vossen</p>
+                    </div>
+                    <div class="col-md-4 footer">
+                    </div>
+                    <div class="col-md-4 footer">
+                        <a>Deze website is gemaakt voor educatieve doelen en is niet vindbaar op zoekmachines. Ik heb geen intenties om de foto's commericeel te gebruiken.</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--- *** Einde pagina 1 *** --->
+
+        <!--- *** Pagina 2 *** --->
+        <div id="pagina_2">
+
+
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+
+                    <div class="col-md-12 header">
+                        <img src="/tracker/media/Logo_news.png" />
+                    </div>
+                    <div class="col-md-1 lower_header">
+                    </div>
+                    <div class="col-md-10 lower_header">
+                        <div class="col lower_header_inner">
+                            <p>Home | Breaking News</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 lower_header">
+                    </div>
+                    <div class="col-md-1 zij_stuk">
+                    </div>
+                    <div class="col-md-6 main_content">
+                        
+                        <div id="tom_text"><h3><span>BREAKING NEWS:</span> Tom Cruise YouTube video</h3>
+                        <p>Bekijk in de video wat Tom Cruise gister avond op TV heeft verteld...</p></div>
+                        <div id="famke_text"><h3><span>BREAKING NEWS:</span> Famke Louise haar laatste blunder</h3>
+                        <p>Bekijk in de video wat Famke Louise gister avond op TV heeft verteld...</p></div>
+                        <div id="justin_text"><h3><span>BREAKING NEWS:</span> Justin Bieber is back</h3>
+                        <p>Bekijk in de video wat Justin Bieber gister avond op TV heeft verteld...</p></div>
+                        <div id="barack_text"><h3><span>BREAKING NEWS:</span> Barack Obama bizarre opmerking</h3>
+                        <p>Bekijk in de video wat Barack Obama gister avond op TV heeft verteld...</p></div>
+                        
+
+                        <div id="video_container">
+                            <div id="video_container_inner">
+                                <video id="webcam" width="400" height="300" preload="auto" loop playsinline autoplay>
+                                </video>
+                                <canvas id="overlay" width="400" height="300"></canvas>
+                                <canvas id="overlayMask" width="400" height="300"></canvas>
+                            </div>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="col-md-2 tussen_stuk">
+                    </div>
+                    <div class="col-md-2 related">
+                        <div class="col related_inner">
+                            <div class="short">
+                                <img src="/tracker/media/persoon_tom.png" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="short">
+                                <img src="/tracker/media/persoon_famke.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="short">
+                                <img src="/tracker/media/persoon_justin.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="short">
+                                <img src="/tracker/media/persoon_barack.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <input class="btn" type="button" value="Reload..." id="reloadKnop"/>
+                        </div>
+                    </div>
+                    <div class="col-md-1 zij_stuk">
+                    </div>
+
+
+
+
+                    <div class="col-md-4 footer">
+                        <img src="/tracker/media/Mark.png"/>
+                        <p>2019 Copyright Timo Vossen</p>
+                    </div>
+                    <div class="col-md-4 footer">
+                    </div>
+                    <div class="col-md-4 footer">
+                        <a>Deze website is gemaakt voor educatieve doelen en is niet vindbaar op zoekmachines. Ik heb geen intenties om de foto's commericeel te gebruiken.</a>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!--- *** Einde pagina 2 *** --->
+
+        <!--- *** Maskers *** --->
+
+
+
+        <img id="tom" class="masks" src="/tracker/media/tom.jpg"/>
+        <img id="famke" class="masks" src="/tracker/media/famke.jpg"/>
+        <img id="justin" class="masks" src="/tracker/media/justin.jpg"/>
+        <img id="barack" class="masks" src="/tracker/media/barack.jpg"/>
+
+    </body>
+
+
+    <!--Jquery script-->
+    <script src="/tracker/scripts/jquery.min.js"></script>
+    <!--Script dat de video maakt-->
+    <script src="/tracker/plugin/utils.js"></script>
+    <!-- Web Graphics Library (webGL) script, maakt het mogelijk om 3d graphics in de browser te tekenen-->
+    <script src="/tracker/plugin/webgl-utils.js"></script>
+    <!--Algemeen plugin script-->
+    <script src="/tracker/plugin/clmtrackr.js"></script>
+    <!--Script dat de maskers uitsnijd-->
+    <script src="/tracker/plugin/model_pca_20_svm.js"></script>
+    <!--Script voor de maskers updaten-->
+    <script src="/tracker/plugin/face_deformer.js"></script>
+    <!--Custom javascript bestand-->
+    <script src="/tracker/scripts/script.js"></script>
+
+
+
+</html>

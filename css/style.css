@@ -1,0 +1,273 @@
+/*Standaard gedeelte*/
+
+body {
+    margin: 0px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* *** Pagina 1 *** */
+#pagina_1 .row{
+    height: 615px;
+}
+
+.header{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header h1{
+    font-weight: 700;
+    font-size: 30pt;
+}
+
+.celeb{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celeb img{
+    height: 150px;
+    width: 150px;
+}
+
+.celeb button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border: 2px;
+    border-style: hidden;
+}
+
+.celeb button:hover{
+    border-style: solid;
+    border-color: #d62839;
+}
+
+.celeb button:focus{
+    border-style: solid;
+    border-color: #d62839;
+}
+
+.celeb h3{
+    font-size: 12pt;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.celeb p{
+    font-size: 8pt;
+    font-weight: 400;
+}
+
+.celeb-zij{
+    height: 50%;
+}
+
+.knop-area{
+    height: 10%;
+}
+
+.knop-area input{
+    background: #d62839;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12pt;
+    float: right;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.knop-area input:hover{
+    background: #000000;
+    color: #d62839;
+}
+
+.footer{
+    height: 14%;
+    font-size: 8pt;
+}
+
+.footer .left{
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer .right{
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer img{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.footer p{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.footer a{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #91cb3e;
+}
+/* *** Pagina 2 *** */
+
+#pagina_2 .row{
+    height: 615px;
+}
+
+#pagina_2 .header{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+#pagina_2 .header img{
+    height: 40px;
+}
+
+#pagina_2 .lower_header{
+    height: 10%;
+}
+
+#pagina_2 .lower_header_inner{
+    height: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#pagina_2 .lower_header p{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    font-size: 8pt;
+    font-weight: 400;
+}
+
+#pagina_2 .zij_stuk{
+    height: 65%;
+}
+
+#pagina_2 .main_content{
+    height: 65%;
+}
+
+#pagina_2 .main_content h3{
+    font-weight: 700;
+    font-size: 12pt;
+    color: #000000;
+}
+
+#pagina_2 .main_content span{
+    color: #d62839;
+}
+
+#pagina_2 .main_content p{
+    font-weight: 400;
+    font-size: 8pt;
+    color: #000000;
+}
+
+#pagina_2 .tussen_stuk{
+    height: 65%;
+}
+
+#pagina_2 .related{
+    height: 65%;
+    padding-top: 40px;
+    
+}
+
+#pagina_2 .related_inner{
+    height: 100%;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.related img{
+    height: 50px;
+    float: left;
+    padding-right: 15px;
+}
+
+.related .short{
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.related p{
+    font-weight: 400;
+    font-size: 8pt;
+}
+
+.related input{
+    background: #d62839;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12pt;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.related input:hover{
+    background: #000000;
+    color: #d62839;
+}
+/*Video gedeelte*/
+
+#overlay, #overlayMask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -o-transform : scaleX(-1);
+    -webkit-transform : scaleX(-1);
+    transform : scaleX(-1);
+    -ms-filter : fliph; /*IE*/
+    filter : fliph; /*IE*/
+    display: block; !important
+}
+
+#webcam {
+    -o-transform : scaleX(-1);
+    -webkit-transform : scaleX(-1);
+    transform : scaleX(-1);
+    -ms-filter : fliph; /*IE*/
+    filter : fliph; /*IE*/
+}
+
+#video_container_inner {
+    position : relative;
+    width : 570px;
+}
+
+#video_container {
+    max-width: 950px;
+    float: left;
+}
+
+.masks {
+    display: none;
+}
